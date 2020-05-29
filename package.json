@@ -1,0 +1,9 @@
+{
+    "name": "react-type-check",
+    "version": "1.0.0",
+    "description": "Type checking utilities for React elements.",
+    "main": "index.js",
+    "repository": "git@github.com/flextremedev/react-type-check.git",
+    "author": "Pascal Wegner <flextremedev@gmail.com>",
+    "license": "MIT"
+}
