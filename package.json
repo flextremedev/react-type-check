@@ -7,10 +7,12 @@
   "author": "Pascal Wegner <flextremedev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "test": "jest -c ./testing/jest.config.js"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
+    "@types/react": "^16.9.35",
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
     "eslint": "^7.1.0",
@@ -20,7 +22,9 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.7",
     "prettier": "^2.0.5",
+    "react": "^16.13.1",
     "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.0",
     "typescript": "^3.9.3"
   },
   "husky": {
