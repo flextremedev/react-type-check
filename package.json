@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "jest -c ./testing/jest.config.js"
+    "test": "jest -c ./testing/jest.config.js",
+    "test:cov": "yarn run test --coverage"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
