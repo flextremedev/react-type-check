@@ -1,4 +1,4 @@
-import { isClassComponent } from '../isClassComponent/isClassComponent';
+import { isClassComponent } from '../is-class-component/isClassComponent';
 
 export const isFunctionComponent = (
   maybeFunctionComponent: unknown

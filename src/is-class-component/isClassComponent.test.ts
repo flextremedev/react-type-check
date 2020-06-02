@@ -1,7 +1,7 @@
 import {
   getFunctionComponent,
   getClassComponent,
-} from '../test-utils/test-utils';
+} from '../test-utils/testUtils';
 import { isClassComponent } from './isClassComponent';
 describe('isFunctionComponent()', () => {
   it('checks if input is a React function component', () => {
