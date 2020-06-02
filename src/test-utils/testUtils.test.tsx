@@ -1,4 +1,4 @@
-import { getFunctionComponent, getClassComponent } from './test-utils';
+import { getFunctionComponent, getClassComponent } from './testUtils';
 
 describe('getFunctionComponent()', () => {
   it('returns a function component', () => {
