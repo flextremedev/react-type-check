@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
+    "check-types": "tsc --noEmit --watch",
     "test": "jest -c ./testing/jest.config.js",
     "test:cov": "yarn run test --coverage",
     "validate": "eslint . --quiet --ext .js && tsc --noEmit"
