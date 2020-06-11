@@ -9,5 +9,8 @@ describe('isFunctionComponent()', () => {
     expect(isMemoizedComponent(getMemoizedComponent())).toBe(true);
     expect(isMemoizedComponent(getFunctionComponent())).toBe(false);
     expect(isMemoizedComponent(getClassComponent())).toBe(false);
+    expect(isMemoizedComponent('string')).toBe(false);
+    expect(isMemoizedComponent({})).toBe(false);
+    expect(isMemoizedComponent({ $$typeof: 'not a symbol' })).toBe(false);
   });
 });

@@ -9,6 +9,7 @@ class ClassComponent extends React.Component {
   }
 }
 const getClassComponent = (): React.ComponentClass => ClassComponent;
+/* istanbul ignore next */
 const ComponentToMemoize: React.FC = () => <div>I'm a memoized function</div>;
 const MemoizedComponent = React.memo<React.ComponentType>(ComponentToMemoize);
 const getMemoizedComponent = (): React.MemoExoticComponent<
