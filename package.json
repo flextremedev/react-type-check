@@ -1,6 +1,6 @@
 {
   "name": "react-type-check",
-  "version": "0.1.0",
+  "version": "0.1.0-rc.3",
   "description": "Type checking utilities for React elements.",
   "main": "dist/index.js",
   "files": [
@@ -17,6 +17,9 @@
     "test": "jest -c ./testing/jest.config.js",
     "test:cov": "yarn run test --coverage",
     "validate": "concurrently \"yarn run eslint . --quiet --ext .js\" \"yarn run check-types\" \"yarn run test-types\""
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0 < 17"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
