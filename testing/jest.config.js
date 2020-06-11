@@ -15,4 +15,5 @@ module.exports = {
     },
   },
   rootDir: '../',
+  roots: ['<rootDir>/src'],
 };
