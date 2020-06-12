@@ -20,7 +20,8 @@
     "validate": "concurrently \"yarn run eslint . --quiet --ext .js\" \"yarn run check-types\" \"yarn run test-types\" \"yarn run test\"",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz:serve": "docz build && docz serve",
+    "docz:deploy": "yarn run docz:build && yarn run gh-pages -d site"
   },
   "peerDependencies": {
     "react": ">=16.8.0 < 17"
@@ -35,6 +36,7 @@
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
+    "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.7",
