@@ -1,3 +1,4 @@
+import type React from 'react';
 import { isClassComponent } from '../is-class-component/isClassComponent';
 
 export const isFunctionComponent = (

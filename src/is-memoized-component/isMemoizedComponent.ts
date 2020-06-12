@@ -1,3 +1,4 @@
+import type React from 'react';
 import { isObject } from '../utils/isObject';
 
 export const isMemoizedComponent = (
