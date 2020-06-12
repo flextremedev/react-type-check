@@ -1,6 +1,6 @@
 {
   "name": "react-type-check",
-  "version": "0.1.0-rc.3",
+  "version": "0.1.0-rc.5",
   "description": "Type checking utilities for React elements.",
   "main": "dist/index.js",
   "files": [
@@ -11,12 +11,13 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
+    "prepublishOnly": "concurrently \"yarn run build\" \"yarn run validate\"",
     "build": "tsc",
     "check-types": "tsc --noEmit",
     "test-types": "yarn run check-types --project ./testing/tsconfig.test.json",
     "test": "jest -c ./testing/jest.config.js",
     "test:cov": "yarn run test --coverage",
-    "validate": "concurrently \"yarn run eslint . --quiet --ext .js\" \"yarn run check-types\" \"yarn run test-types\"",
+    "validate": "concurrently \"yarn run eslint . --quiet --ext .js\" \"yarn run check-types\" \"yarn run test-types\" \"yarn run test\"",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve"
