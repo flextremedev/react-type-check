@@ -3,8 +3,76 @@ name: API Reference
 route: /api
 ---
 
-# API Reference (WIP)
+# API Reference
 ## isFunctionComponent
+Determines if the passed value is a React function component.
+```tsx
+import React from 'react';
+import { isFunctionComponent } from 'react-type-check';
+
+let maybeFC: React.FC | string = () => <div>I'm a function component!</div>;
+if (Math.random() > 0.5) {
+  maybeFC = 'Not FC';
+}
+if (isFunctionComponent(maybeFC)) {
+  const fc: React.FC = maybeFC;
+} else {
+  const notFC: string = maybeFC;
+}
+```
 ## isClassComponent
+Determines if the passed value is a React class component.
+```tsx
+import React from 'react';
+import { isClassComponent } from 'react-type-check';
+
+class ClassComponent extends React.Component {
+  render() {
+    return <div>I'm a class component!</div>;
+  }
+}
+let maybeCC: React.ComponentClass | string = ClassComponent;
+if (Math.random() > 0.5) {
+  maybeCC = 'Not CC';
+}
+if (isClassComponent(maybeCC)) {
+  const cc: React.ComponentClass = maybeCC;
+} else {
+  const notCC: string = maybeCC;
+}
+```
 ## isMemoizedComponent
+Determines if the passed value is a React.memo() memoized component.
+```tsx
+import React from 'react';
+import { isMemoizedComponent } from 'react-type-check';
+
+let maybeMC:
+  | React.MemoExoticComponent<React.ComponentType>
+  | string = React.memo(() => <div>I'm a memoized component!</div>);
+if (Math.random() > 0.5) {
+  maybeMC = 'Not MC';
+}
+if (isMemoizedComponent(maybeMC)) {
+  const mc: React.MemoExoticComponent<React.ComponentType> = maybeMC;
+} else {
+  const notMC: string = maybeMC;
+}
+```
 ## isReactComponent
+Determines if the passed value is a React class component.
+```tsx
+import React from 'react';
+import { isReactComponent } from 'react-type-check';
+
+let maybeRC: React.ComponentType | string = () => <div>I'm some React component!</div>;
+if (Math.random() > 0.5) {
+  maybeRC = 'Not RC';
+}
+if (isReactComponent(maybeRC)) {
+  const rc: React.ComponentType = maybeRC;
+} else {
+  const notRC: string = maybeRC;
+}
+
+```
