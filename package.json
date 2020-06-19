@@ -1,6 +1,6 @@
 {
   "name": "react-type-check",
-  "version": "0.1.0-rc.5",
+  "version": "1.0.0",
   "description": "Type checking utilities for React elements.",
   "main": "dist/index.js",
   "files": [
@@ -17,7 +17,7 @@
     "test-types": "yarn run check-types --project ./testing/tsconfig.test.json",
     "test": "jest -c ./testing/jest.config.js",
     "test:cov": "yarn run test --coverage",
-    "validate": "concurrently \"yarn run eslint . --quiet --ext .js\" \"yarn run check-types\" \"yarn run test-types\" \"yarn run test\"",
+    "validate": "concurrently \"yarn run eslint . --quiet --ext .ts\" \"yarn run check-types\" \"yarn run test-types\" \"yarn run test\"",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
