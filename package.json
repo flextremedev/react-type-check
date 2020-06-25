@@ -24,7 +24,7 @@
     "docz:deploy": "yarn run docz:build && yarn run gh-pages -d site"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 < 17"
+    "react": ">= 16.8.0 < 17"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
