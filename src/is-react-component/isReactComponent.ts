@@ -1,4 +1,4 @@
-import type React from 'react';
+import React from 'react';
 import { isFunctionComponent } from '../is-function-component/isFunctionComponent';
 import { isClassComponent } from '../is-class-component/isClassComponent';
 import { isMemoizedComponent } from '../is-memoized-component/isMemoizedComponent';

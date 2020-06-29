@@ -1,4 +1,4 @@
-import type React from 'react';
+import React from 'react';
 export const isClassComponent = (
   maybeClassComponent: unknown
 ): maybeClassComponent is React.ComponentClass => {

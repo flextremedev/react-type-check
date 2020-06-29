@@ -1,6 +1,6 @@
 {
   "name": "react-type-check",
-  "version": "1.0.2",
+  "version": "1.0.3-rc.2",
   "description": "Type checking utilities for React elements.",
   "main": "dist/index.js",
   "files": [
