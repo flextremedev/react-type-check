@@ -6,7 +6,7 @@ export const isFunctionComponent = (
 ): maybeFunctionComponent is React.FC => {
   return (
     typeof maybeFunctionComponent === 'function' &&
-    /react.*createElement/i.test(String(maybeFunctionComponent)) &&
+    /\.default\.createElement/i.test(String(maybeFunctionComponent)) &&
     !isClassComponent(maybeFunctionComponent)
   );
 };
