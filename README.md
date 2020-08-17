@@ -8,7 +8,7 @@ There cases when you want to check if a value is a React component. You might ev
 
 ## The solution
 
-`react-type-check` checks if the value is some sort of a React component and also tells Typescript if it is.
+`react-type-check` checks if the value is some sort of a React component and also tells TypeScript if it is.
 
 ## Getting started
 
@@ -45,7 +45,7 @@ if (isReactComponent(maybeRC)) {
 ```
 
 ```tsx
-// Typescript
+// TypeScript
 import { isReactComponent } from 'react-type-check';
 let maybeRC: React.ComponentType | string = () => (
   <div>I'm a React component</div>
