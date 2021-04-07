@@ -4,7 +4,7 @@ Type checking utilities for React elements.
 
 ## The problem
 
-There cases when you want to check if a value is a React component. You might even want it to be typeguarded. Checking for React components isn't trivial at all. For example it depends on which JavaScript syntax you're using.
+There may be cases when you want to check if a value is a React component. You might even want it to be typeguarded. Checking for React components isn't trivial at all. For example it depends on which JavaScript syntax you're using.
 
 ## The solution
 
